@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_toolbar_height" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/top_view"
+        android:id="@+id/gridViewFromMediaChooser"
+        android:background="@android:color/white"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/toolbar_layout" />
+</RelativeLayout>
